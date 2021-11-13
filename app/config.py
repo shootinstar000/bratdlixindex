@@ -7,14 +7,7 @@ import os
 
 
 
-i = {
-  "index_all": true,
-  "index_private": false,
-  "index_group": false,
-  "index_channel": true,
-  "exclude_chats": [],
-  "include_chats": []
-}
+
 
 
 try:
@@ -39,7 +32,14 @@ except (KeyError, ValueError):
 
 try:
    # index_settings_str = is
-    index_settings = is
+    index_settings = {
+  "index_all": true,
+  "index_private": false,
+  "index_group": false,
+  "index_channel": true,
+  "exclude_chats": [],
+  "include_chats": []
+} 
 except Exception:
     traceback.print_exc()
     print("\n\nPlease set the INDEX_SETTINGS environment variable correctly")
