@@ -7,7 +7,8 @@ import os
 
 
 
-is={
+is=
+{
   "index_all":true,
   "index_private":false,
   "index_group":false,
