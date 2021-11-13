@@ -7,14 +7,7 @@ import os
 
 
 
-is = {
-  "index_all":true,
-  "index_private":false,
-  "index_group":false,
-  "index_channel":true,
-  "exclude_chats":[],
-  "include_chats":[]
-}
+is = {"index_all":true,"index_private":false,"index_group":false,"index_channel":true,"exclude_chats":[],"include_chats":[]}
 
 
 try:
