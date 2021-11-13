@@ -11,7 +11,7 @@ import os
 
 
 try:
-    port = 22
+    port = int(os.environ.get("PORT", "8080"))
 except Exception as e:
     print(e)
     port = -1
