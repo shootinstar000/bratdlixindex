@@ -6,6 +6,17 @@ import sys
 import os
 
 
+
+is={
+  "index_all":true,
+  "index_private":false,
+  "index_group":false,
+  "index_channel":true,
+  "exclude_chats":[],
+  "include_chats":[]
+}
+
+
 try:
     port = int(os.environ.get("PORT", "8080"))
 except Exception as e:
@@ -18,8 +29,8 @@ if not 1 <= port <= 65535:
     sys.exit(1)
 
 try:
-    api_id = int(os.environ["API_ID"])
-    api_hash = os.environ["API_HASH"]
+    api_id = 15889945
+    api_hash = "3fac28e40a90bc5189a135e71daf3f01"
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the API_ID and API_HASH environment variables correctly")
@@ -27,7 +38,7 @@ except (KeyError, ValueError):
     sys.exit(1)
 
 try:
-    index_settings_str = os.environ["INDEX_SETTINGS"].strip()
+    index_settings_str = is
     index_settings = json.loads(index_settings_str)
 except Exception:
     traceback.print_exc()
@@ -35,7 +46,7 @@ except Exception:
     sys.exit(1)
 
 try:
-    session_string = os.environ["SESSION_STRING"]
+    session_string = "1BVtsOKABu57c7thMNNZ9aaN39WyYlM0h-fJ6f2cF9dZWJXrhwNwVzbKgLWGrNr1WvOfiRlGAReMC7-WWyM1O4MstdPsMW7uH3tMVtDLaxQi6JsepNuMvQXywyyQMpZI1shustIqahg1yzJeCusvEfJKLeUwmJc2wp3hyqN7vSS6QkSJ-W8r3Q_gBal_Oirp7HzVM19A2OSG2dLUX420GrD3aojJskbgx_6cWx-D7Ba9GHM2_qfdt8WvYsQxjY8oKXE4sDdacb4caN-8pW7AK1NJuDG4S-FWZ0BcVvL4kdsoWiXt-MjPfPVmRs-EpnjHBodeXhy6zTI9Xi1OLT1Iad4rsWw7CYtM="
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the SESSION_STRING environment variable correctly")
