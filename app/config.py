@@ -38,8 +38,8 @@ except (KeyError, ValueError):
     sys.exit(1)
 
 try:
-    index_settings_str = is
-    index_settings = json.loads(index_settings_str)
+   # index_settings_str = is
+    index_settings = is
 except Exception:
     traceback.print_exc()
     print("\n\nPlease set the INDEX_SETTINGS environment variable correctly")
