@@ -33,10 +33,10 @@ except (KeyError, ValueError):
 try:
    # index_settings_str = is
     index_settings = {
-  "index_all": true,
-  "index_private": false,
-  "index_group": false,
-  "index_channel": true,
+  "index_all": True,
+  "index_private": False,
+  "index_group": False,
+  "index_channel": False,
   "exclude_chats": [],
   "include_chats": []
 } 
