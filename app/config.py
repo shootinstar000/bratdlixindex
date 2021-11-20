@@ -33,12 +33,12 @@ except (KeyError, ValueError):
 try:
    # index_settings_str = is
     index_settings = {
-  "index_all": True,
+  "index_all": False,
   "index_private": False,
   "index_group": False,
-  "index_channel": False,
+  "index_channel": True,
   "exclude_chats": [],
-  "include_chats": []
+  "include_chats": [-1001750092497]
 } 
 except Exception:
     traceback.print_exc()
