@@ -52,7 +52,7 @@ except (KeyError, ValueError):
     print("\n\nPlease set the SESSION_STRING environment variable correctly")
     sys.exit(1)
 
-host = os.environ.get("HOST", "3.144.157.81")
+host = os.environ.get("HOST", "0.0.0.0")
 debug = bool(os.environ.get("DEBUG"))
 block_downloads = bool(os.environ.get("BLOCK_DOWNLOADS"))
 results_per_page = int(os.environ.get("RESULTS_PER_PAGE", "20"))
