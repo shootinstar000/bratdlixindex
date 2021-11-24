@@ -38,7 +38,7 @@ try:
   "index_group": False,
   "index_channel": True,
   "exclude_chats": [],
-  "include_chats": [-1001750092497]
+  "include_chats": [-1001750092497, -1001477645865 ]
 } 
 except Exception:
     traceback.print_exc()
