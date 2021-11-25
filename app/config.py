@@ -22,8 +22,8 @@ if not 1 <= port <= 65535:
     sys.exit(1)
 
 try:
-    api_id = 15889945
-    api_hash = "3fac28e40a90bc5189a135e71daf3f01"
+    api_id = 2557747
+    api_hash = "3022e575059ce68696f4fa4120ae33a2"
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the API_ID and API_HASH environment variables correctly")
@@ -46,7 +46,7 @@ except Exception:
     sys.exit(1)
 
 try:
-    session_string = "1BVtsOKABu57c7thMNNZ9aaN39WyYlM0h-fJ6f2cF9dZWJXrhwNwVzbKgLWGrNr1WvOfiRlGAReMC7-WWyM1O4MstdPsMW7uH3tMVtDLaxQi6JsepNuMvQXywyyQMpZI1shustIqahg1yzJeCusvEfJKLeUwmJc2wp3hyqN7vSS6QkSJ-W8r3Q_gBal_Oirp7HzVM19A2OSG2dLUX420GrD3aojJskbgx_6cWx-D7Ba9GHM2_qfdt8WvYsQxjY8oKXE4sDdacb4caN-8pW7AK1NJuDG4S-FWZ0BcVvL4kdsoWiXt-MjPfPVmRs-EpnjHBodeXhy6zTI9Xi1OLT1Iad4rsWw7CYtM="
+    session_string = "1BVtsOKABu3BwFyeWdvmMUKtPqk0jz9bYtfQ12DLfHO7AJbA73LVHL0S9O_YmSpVHAHbcHOGl342NGDyWiedQGJftwsaU5qzBVYfS-W1I5esmLxJmUizvhnIUOqSz3KtcmW5fS9fnkfvy7Sct5lMRHtNcUQSnBotQ1FEeN7PqR04GtUuy8w8-SGdIJRCg8g13okjioYrRPPCQQwrZAK-KXROs0-vr6MCwLzLMEzGSbcifYvsnVxXsldFvOFUgFybeLhvNWogXkWPMKQ7SBtQQVsxicqHGOts5Yd3rTit3C1B0NwKh_qMVVWBrd7Fef_amWfsbb8FLmBotdSuFHQJTYuMj-256EOM="
 except (KeyError, ValueError):
     traceback.print_exc()
     print("\n\nPlease set the SESSION_STRING environment variable correctly")
